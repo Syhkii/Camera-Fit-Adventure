@@ -1,3 +1,11 @@
+## Table of Contents
+
+- [ASCII Art Title](#ascii-art-title)
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+
 ## ASCII Art Title
    _____                  _   _ _____      _ 
   / ____|                | | (_)  __ \    | |
