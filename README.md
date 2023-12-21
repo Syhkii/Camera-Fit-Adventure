@@ -1,6 +1,6 @@
 # 🏀 SportiPal 🏀‍‍ [ creation in progress... 🛠 ]
 
-# L'idée
+## L'idée
 
 Application de suivie sporitf interactif
 
