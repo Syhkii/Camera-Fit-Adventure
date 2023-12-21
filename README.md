@@ -1,4 +1,4 @@
-# Camera-Fit-Adventure
+# SportiPal
 Un projet alliant sport et informatique
 
 Membres:
