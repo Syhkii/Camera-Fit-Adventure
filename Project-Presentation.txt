@@ -6,3 +6,9 @@ s'entrainer tous les jours pour faire monter ses points et son classement, mais 
 faudra aussi être très régulier car il faudra satisfaire son compagnon.
   En effet, SportiPal ajoute une dimension proche d'un Tamagotchi. Il faudra prendre
 soin du personnage, qui pourra vous encourager et vous aider dans la quête.
+  Le compagnon vous proposera également l'achat de matériels pour progresser et vous
+permettre d'accéder à d'autres exercices. Ainsi qu'un suivi complet dans
+l'échauffement et étirement avant et après la séance. Les exerccies changeront aussi
+en fcontion de vos capacités et du temps que vous voulez passer dessus.
+  Le compagnon changera également d'émotions et de look en fonctions de vos séance et de la
+liste des séances réalisées (sous l'idée de Duolinguo).
