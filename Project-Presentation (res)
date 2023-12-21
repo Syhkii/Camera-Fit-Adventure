@@ -1,29 +1,14 @@
 The project name is : # SportiPal
-_______________________________
-  The brief conecpt is a game, |
-that plays by self-movements.  |
-We connect a camera, tracking  |
-your movements. The hands that |
-are now tracked are used to    |
-touch colored circles to gain  |
-points. The goal of the game   |
-is to obtain the most points   |
-possible, by maintaining a     |
-regular activity, by moving to |
-touch them.                    |
-_______________________________|
 
 Une application de suivie sportif:
-  - Donne des exercices adapter en fonction du matériel à disposition
+ - Donne des exercices adaptés en fonction du matériel à disposition
 
-  - Les exercices évoluent en fonction de plusieurs facteurs:
-            --> En fonction du temps et du nombre de séances
-            --> En fonction des performances durant et après la séance.
- -Aide à l'échauffement
- -Aide aux étirements en fin de séance
-
- -recommandation de matériel à acheter pour progresser plus vite
+ - Les exercices évoluent en fonction de plusieurs facteurs:
+    --> En fonction du temps et du nombre de séances
+    --> En fonction des performances durant et après la séance.
 
  - Présence d'une mascote : SportiPal
     --> Change de look en fonction du consitance des séances
+    --> Vous propose des achats pour améliorer les seances
+    --> Vous donne aussi des messages motivants
     --> Peut mourrir si des informations ne sont pas rentrer régulièrement
