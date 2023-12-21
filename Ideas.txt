@@ -1,0 +1,8 @@
+Some ideas we might add :
+ - Diffuclty levels
+ - Precise settings of the hand tracking
+ - Power-ups and bonuses of the game
+ - Music integration
+-----------------------------------------
+ - Tutorial integration
+ - Potential story / lore
