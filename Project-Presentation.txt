@@ -1,10 +1,8 @@
-Presentation developped of : SportiPal
+Presentation développée de : SportiPal
 
-  The project consists of a fitness game. The player will need to move his body to
-touch the colored circles and gain points. The game works by using a connected
-camera to tracks hand and make them collide with the circles. It will show a panel
-with your score, the time you elapsed, and a local high score.
-  The first idea will be to track hands. We are gonna use cv2, to add the camera,
-and then add the other library, mediapipe. This lib has already the ai-like
-recognition of hands. With the use of the lib Pygame, it will store both hands in
-objects.
+  Le projet consiste en la création d'un coach sportif qui créera à l'utilisateur un
+programme d'entrainement en fonction de la personne. Non seulement il suffit de
+s'entrainer tous les jours pour faire monter ses points et son classement, mais il
+faudra aussi être très régulier car il faudra satisfaire son compagnon.
+  En effet, SportiPal ajoute une dimension proche d'un Tamagotchi. Il faudra prendre
+soin du personnage, qui pourra vous encourager et vous aider dans la quête.
