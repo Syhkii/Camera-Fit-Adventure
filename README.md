@@ -1,31 +1,89 @@
-   _____                  _   _ _____      _ 
-   
-  / ____|                | | (_)  __ \    | |
-  
- | (___  _ __   ___  _ __| |_ _| |__) |_ _| |
-  \___ \| '_ \ / _ \| '__| __| |  ___/ _` | |
-  ____) | |_) | (_) | |  | |_| | |  | (_| | |
- |_____/| .__/ \___/|_|   \__|_|_|   \__,_|_|
-        | |                                  
-        |_|                                  
+# 🏀 SportiPal 🏀‍‍ [ creation in progress... 🛠 ]
 
-## Table of Contents
+[![Build Status](https://travis-ci.com/ImGabe/Tamagochi.svg?branch=master)](https://travis-ci.com/ImGabe/Tamagochi)
+[![CodeFactor](https://www.codefactor.io/repository/github/imgabe/tamagochi/badge)](https://www.codefactor.io/repository/github/imgabe/tamagochi)
+[![Known Vulnerabilities](https://snyk.io/test/github/ImGabe/Tamagochi/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/ImGabe/Tamagochi?targetFile=requirements.txt)
 
-- [About](#about)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
+## PT-BR
 
-## About
+## Ajuda o projeto 🏳
 
-Briefly describe your project here. Provide context, purpose, and any other relevant information.
+**O projeto** está *meio parado* pela minha falta de tempo, criatividade __e habilidade__ para continua-lo. Estou fazendo tudo vagarosamente, e por isso, peço ajuda com sugestões, traduções, dicas, etc.
 
-## Installation
+Adicione-me no [**Discord**](https://discordapp.com/) para mais informações sobre o projeto: **Gabe#4346**
 
-Explain how to install your project. Include any prerequisites, step-by-step instructions, and code examples.
+### Metas 📌
 
-```bash
-# Example installation command
-npm install your-package
+- [ ] Ações do tamagochi
+- [ ] Interface gráfica
+- [ ] Salvar dados
+- [ ] Login por nome
+
+### Requistos ⚙
+* Python 3.6
+* git (opcional)
+* Winrar/7zip/... (*Download Sem git*)
+
+### Download ⬇
+
+**Com git**
+
+Abra o promt de comando (CMD) / powershell / terminal e digite:
+
+`git clone https://github.com/ImGabe/Tamagochi`
+
+**Sem git**
+ 
+Faça o Download do arquivo **.zip** e extraia a pasta.
+
+### Modo de uso 🗒
+
+Entre na pasta gerada após o download e digite no prompt de comando (CMD) / powershell / terminal:
+
+`pip install -r requirements.txt`
+
+`py main.py` / `python main.py` / `python3 main.py`
+
+E pronto! 🎉
+
+## EN-US 
+
+## Help the project 🏳
+
+**The project** is a little bit slow due to my lack of time, creativity and __hability__ to continue. I'm doing things very slowly, and for this, I ask for help with suggestions, translations, tips, etc.
+
+Add me on [**Discord**](https://discordapp.com/) for more information about the project: **Gabe#4346**
+
+### Goals 📌
+
+- [ ] Tamagochi actions
+- [ ] Graphic Interface
+- [ ] Save data
+- [ ] Login by name
+
+### Requirements  ⚙
+* Python 3.6
+* git (optional)
+* Winrar/7zip/... (*If Downloading without git*)
+
+### Download ⬇
+
+**Using git**
+
+Open your Terminal and write:
+
+`git clone https://github.com/ImGabe/Tamagochi`
+
+**Without git**
+ 
+Download the files and extract them.
+
+### How to use 🗒
+
+Using your terminal, go into the file and write this:
+
+`pip install -r requirements.txt`
+
+`py main.py` / `python main.py` / `python3 main.py`
+
+Now you're ready to play! 🎉
