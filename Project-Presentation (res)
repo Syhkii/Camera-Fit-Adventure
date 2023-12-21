@@ -5,6 +5,7 @@ Une application de suivie sportif:
 
  - Les exercices évoluent en fonction de plusieurs facteurs:
     --> En fonction du temps et du nombre de séances
+    --> Adaptibilité Durant la séance
     --> En fonction des performances durant et après la séance.
 
  - Présence d'une mascote : SportiPal
