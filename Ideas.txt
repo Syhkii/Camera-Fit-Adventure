@@ -1,0 +1,11 @@
+Some ideas we might wanna add :
+_______________________________
+ - Customizable / advanced settings
+ - Difficulty levels
+ - Power-ups and bonuses
+ - Music / Sounds integration
+ - Tutorial
+-------------------------------
+ - Leaderboard
+ - Friends
+_______________________________
