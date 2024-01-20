@@ -11,5 +11,4 @@ Les fichiers du mannequin sont fournis au format .pixil et peuvent être facilem
 3. Ouvrez le fichier avec Pixilart pour visualiser et personnaliser la configuration musculaire.
 
 ## Versions disponibles
-
-## ⚠️ Le Mannequin N'est Pas Encore Fini
+⚠️ aucune pour l'instant...
