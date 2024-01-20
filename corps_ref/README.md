@@ -12,4 +12,4 @@ Les fichiers du mannequin sont fournis au format .pixil et peuvent être facilem
 
 ## Versions disponibles
 
-## Le Mannequin N'est Pas Encore Fini
+## ⚠️ Le Mannequin N'est Pas Encore Fini
