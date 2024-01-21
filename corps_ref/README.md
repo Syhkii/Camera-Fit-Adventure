@@ -12,5 +12,5 @@ Les fichiers du mannequin sont fournis au format .pixil et peuvent être facilem
 
 ## Versions disponibles
 ![Mannequin 1](https://github.com/Syhkii/SportiPal/blob/main/corps_ref/Mannequin_Image_1.png=200x200)
-<img src='[figure/rstudio.png]https://github.com/Syhkii/SportiPal/blob/main/corps_ref/Mannequin_Image_1.png)https://github.com/Syhkii/SportiPal/blob/main/corps_ref/Mannequin_Image_1.png' width='25'>
+<img src='https://github.com/Syhkii/SportiPal/blob/main/corps_ref/Mannequin_Image_1.png' width='25'>
 
