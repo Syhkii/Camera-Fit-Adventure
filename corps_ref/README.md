@@ -19,3 +19,6 @@ Verion 2:
   - ajout des zones ou l'on ne peut pas choisir de muscles  
 <img src='https://github.com/Syhkii/SportiPal/blob/main/corps_ref/Mannequin_Image_2.png' width='250'>
 
+Verion 3:  
+  - ajout de quelques couleurs de muscles  
+<img src='https://github.com/Syhkii/SportiPal/blob/main/corps_ref/Mannequin_Image_3.png' width='250'>
