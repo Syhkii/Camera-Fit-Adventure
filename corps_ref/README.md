@@ -11,7 +11,6 @@ Les fichiers du mannequin sont fournis au format .pixil et peuvent être facilem
 3. Ouvrez le fichier avec Pixilart pour visualiser et personnaliser la configuration musculaire.
 
 ## Versions disponibles
-Verion 1
+Verion 1  
 <img src='https://github.com/Syhkii/SportiPal/blob/main/corps_ref/Mannequin_Image_1.png' width='250'>
-[Télécharger](https://github.com/Syhkii/SportiPal/blob/main/corps_ref/Mannequin_1.pixil?raw=true)
 
