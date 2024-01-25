@@ -11,6 +11,7 @@ Adam Gosalbes
 
 
 ## Répartition du travail
-Inaki Derouet + Luka Moulin (Compagnon + interface)   
+Inaki Derouet (Interface)
+Luka Moulin (Carte des lieux de sport)
 Adrien Kühnel (Exo et choix selon les personnes)   
 Adam Gosalbes (camera)   
