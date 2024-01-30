@@ -235,35 +235,11 @@ except Exception as e:
     print('Missing sound files', e)
     sound = False
 
-innit = True
+innit = False
 size = 5
 
 """ MUSCLES """
-display_abs = False
-display_pecs = False
-display_biceps = False
-ext_obliques = False
-ext_obliques = False
-trapèze = False
-muscle_dentele = False
-deltoïdes = False
-Brachial = False
-Biceps_Brachial = False
-muscle_des_avants_bras = False
-Triceps = False
-Fessier = False
-Lombaires = False
-Pectoraux = False
-Biceps = False
-Cuisse = False
-Grand_dorsal = False
-mollets = False
-abducteurs = False
-Quadriceps = False
-Ischio_jambiers = False
-Triceps_Sural = False
-Biceps_fémoral = False
-Quadriceps_droit_de_la_cuisse = False
+
 
 """ MATERIEL """
 halteres = False
@@ -293,131 +269,141 @@ def get_exo():
 
     for x in range(len(str(data).split('\n'))):
         exo = str(data_sep[x]).split(';')
-        if 'Deltoïde' in str(data_sep[x]) and deltoïdes:
+        for x in range(len(bool_dico)):
+            muscle = list(bool_dico.keys())[x]
+            if str(muscle) in str(data_sep[x]) and bool_dico[str(muscle)] == "True":
+                if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
+                    if str(exo[1]) not in str(listexo):
+                        exm=(exo[1],exo[3])
+                        listexo.append(exm)
+    return listexo
+
+"""
+def get_exo():
+    listexo = []
+    f = open("Projet NSI.txt", "r")
+    data = f.read()
+    data_sep = str(data).split('\n')
+
+    for x in range(len(str(data).split('\n'))):
+        exo = str(data_sep[x]).split(';')
+        if 'Deltoïde' in str(data_sep[x]) and bool_dico["deltoïdes"] == "True":
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                 if str(exo[1]) not in str(listexo):
                     exm=(exo[1],exo[3])
                     listexo.append(exm)
 
-        if 'Biceps' in str(data_sep[x]) and display_biceps:
+        if 'Biceps' in str(data_sep[x]) and bool_dico["display_biceps"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                 if str(exo[1]) not in str(listexo):
                     exm=(exo[1],exo[3])
                     listexo.append(exm)
 
-        if 'Brachial' in str(data_sep[x]) and Brachial:
+        if 'Brachial' in str(data_sep[x]) and bool_dico["Brachial"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                 if str(exo[1]) not in str(listexo):
                     exm=(exo[1],exo[3])
                     listexo.append(exm)
 
-        if 'Biceps_Brachial' in str(data_sep[x]) and Biceps_Brachial:
+        if 'Biceps_Brachial' in str(data_sep[x]) and bool_dico["Biceps_Brachial"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                 if str(exo[1]) not in str(listexo):
                     listexo.append(exo[1])
 
-        if 'muscle_des_avants_bras' in str(data_sep[x]) and muscle_des_avants_bras:
+        if 'muscle_des_avants_bras' in str(data_sep[x]) and bool_dico["muscle_des_avants_bras"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                 if str(exo[1]) not in str(listexo):
                     listexo.append(exo[1])
 
-        if 'Triceps' in str(data_sep[x]) and Triceps:
+        if 'Triceps' in str(data_sep[x]) and bool_dico["Triceps"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                 if str(exo[1]) not in str(listexo):
                     exm=(exo[1],exo[3])
                     listexo.append(exm)
 
-        if 'Trapèze' in str(data_sep[x]) and trapèze:
+        if 'Trapèze' in str(data_sep[x]) and bool_dico["trapèze"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                 if str(exo[1]) not in str(listexo):
                     exm=(exo[1],exo[3])
                     listexo.append(exm)
 
-        if 'Abdos' in str(data_sep[x]) and display_abs:
+        if 'Abdos' in str(data_sep[x]) and bool_dico["display_abs"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                 if str(exo[1]) not in str(listexo):
                     exm=(exo[1],exo[3])
                     listexo.append(exm)
 
-        if 'Fessier' in str(data_sep[x]) and Fessier:
+        if 'Fessier' in str(data_sep[x]) and bool_dico["Fessier"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                 if str(exo[1]) not in str(listexo):
                     exm=(exo[1],exo[3])
                     listexo.append(exm)
 
-        if 'Grand pectoral' in str(data_sep[x]) and display_pecs:
+        if 'Grand pectoral' in str(data_sep[x]) and bool_dico["display_pecs"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                 if str(exo[1]) not in str(listexo):
                     exm=(exo[1],exo[3])
                     listexo.append(exm)
 
-        if 'Pectoraux' in str(data_sep[x]) and display_pecs:
+        if 'Pectoraux' in str(data_sep[x]) and bool_dico["display_pecs"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                 if str(exo[1]) not in str(listexo):
                     exm=(exo[1],exo[3])
                     listexo.append(exm)
 
-        if 'Cuisse' in str(data_sep[x]) and Cuisse:
+        if 'Cuisse' in str(data_sep[x]) and bool_dico["Cuisse"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                         if str(exo[1]) not in str(listexo):
                             exm=(exo[1],exo[3])
                             listexo.append(exm)
 
-        if 'Grand dorsal' in str(data_sep[x]) and Grand_dorsal:
+        if 'Grand dorsal' in str(data_sep[x]) and bool_dico["Grand_dorsal"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                         if str(exo[1]) not in str(listexo):
                             exm=(exo[1],exo[3])
                             listexo.append(exm)
 
-        if 'mollets' in str(data_sep[x]) and mollets:
+        if 'mollets' in str(data_sep[x]) and bool_dico["mollets"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                         if str(exo[1]) not in str(listexo):
                             exm=(exo[1],exo[3])
                             listexo.append(exm)
 
-        if 'abducteurs' in str(data_sep[x]) and abducteurs:
+        if 'abducteurs' in str(data_sep[x]) and bool_dico["abducteurs"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                         if str(exo[1]) not in str(listexo):
                             exm=(exo[1],exo[3])
                             listexo.append(exm)
 
-        if 'Quadriceps' in str(data_sep[x]) and Quadriceps:
+        if 'Quadriceps' in str(data_sep[x]) and bool_dico["Quadriceps"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                         if str(exo[1]) not in str(listexo):
                             exm=(exo[1],exo[3])
                             listexo.append(exm)
 
-        if 'Ischio jambiers' in str(data_sep[x]) and Ischio_jambiers:
+        if 'Ischio jambiers' in str(data_sep[x]) and bool_dico["Ischio_jambiers"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                         if str(exo[1]) not in str(listexo):
                             exm=(exo[1],exo[3])
                             listexo.append(exm)
 
-        if 'Triceps Sural' in str(data_sep[x]) and Triceps_Sural:
-            exo = str(data_sep[x]).split(';')
-            if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
-                        if str(exo[1]) not in str(listexo):
-                            exm=(exo[1],exo[3])
-                            listexo.append(exm)
-
-
-        if 'Biceps fémoral' in str(data_sep[x]) and Biceps_fémoral:
+        if 'Triceps Sural' in str(data_sep[x]) and bool_dico["Triceps_Sural"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                         if str(exo[1]) not in str(listexo):
@@ -425,7 +411,15 @@ def get_exo():
                             listexo.append(exm)
 
 
-        if 'Quadriceps droit de la cuisse' in str(data_sep[x]) and Quadriceps_droit_de_la_cuisse:
+        if 'Biceps fémoral' in str(data_sep[x]) and bool_dico["Biceps_fémoral"] == "True":
+            exo = str(data_sep[x]).split(';')
+            if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
+                        if str(exo[1]) not in str(listexo):
+                            exm=(exo[1],exo[3])
+                            listexo.append(exm)
+
+
+        if 'Quadriceps droit de la cuisse' in str(data_sep[x]) and bool_dico["Quadriceps_droit_de_la_cuisse"] == "True":
             exo = str(data_sep[x]).split(';')
             if "Pas de matériel" in str(exo[5]) and aucun or "Matérielle achetable" in str(exo[5]) and MaterielleAchetable or "A faire en salle" in str(exo[5]) and EnSalle:
                         if str(exo[1]) not in str(listexo):
@@ -433,54 +427,60 @@ def get_exo():
                             listexo.append(exm)
 
     return listexo
+"""
+bool_dico = {
+"display_abs": "False",
+"display_pecs": "True",
+"display_biceps" : "False",
+"ext_obliques" : "False",
+"trapèze" : "False",
+"muscle_dentele" : "False",
+"deltoïdes" : "False",
+"Brachial" : "False",
+"Biceps_Brachial" : "False",
+"muscle_des_avants_bras" : "False",
+"Triceps" : "False",
+"Fessier" : "False",
+"Lombaires" : "False",
+"Pectoraux" : "False",
+"Biceps" : "False",
+"Cuisse" : "False",
+"Grand_dorsal" : "False",
+"mollets" : "False",
+"abducteurs" : "False",
+"Quadriceps" : "False",
+"Ischio_jambiers" : "False",
+"Triceps_Sural" : "False",
+"Biceps_fémoral" : "False",
+"Quadriceps_droit_de_la_cuisse" : "False"
+}
 
-def draw_body(body, size):
+body_colors = {-1:(84,110,122),
+          0:(38,50,56),
+          1:(255,255,255),
+          2:(120,120,120),
+          3:((229,57,53),"display_pecs"),
+          4:((229,57,53),"display_biceps"),
+          5:((229,57,53),"display_abs"),
+          6:((229,57,53),"ext_obliques"),
+          7:((229,57,53),"muscle_dentele"),
+          8:((229,57,53),"deltoïdes"),
+          9:((229,57,53),"trapèze")
+}
+
+def draw(matrix, size, colors, bool_dico):
     global screen
-    for x in range(85):
-        for y in range(85):
-            if body[y][x] == -1:
-                pygame.draw.rect(screen, (84,110,122), (size*x, size*y, size, size))
-            if body[y][x] == 0:
-                pygame.draw.rect(screen, (38,50,56), (size*x, size*y, size, size))
-            if body[y][x] == 1:
-                pygame.draw.rect(screen, (255,255,255), (size*x, size*y, size, size))
-            if body[y][x] == 2:
-                pygame.draw.rect(screen, (120,120,120), (size*x, size*y, size, size))
+    for x in range(len(matrix[0])):
+        for y in range(len(matrix)):
+            if matrix[y][x] in colors:
+                if len(colors[matrix[y][x]]) == 2:
+                    if bool_dico[str(colors[matrix[y][x]][1])] == "False":
+                        pygame.draw.rect(screen, (255,255,255), (size*x, size*y, size, size))
+                    else:
+                        pygame.draw.rect(screen, colors[matrix[y][x]][0], (size*x, size*y, size, size))
+                else:
+                    pygame.draw.rect(screen, colors[matrix[y][x]], (size*x, size*y, size, size))
 
-            if body[y][x] == 5 and display_abs==True:
-                pygame.draw.rect(screen, (229,57,53), (size*x, size*y, size, size))
-            elif body[y][x] == 5 and display_abs==False:
-                pygame.draw.rect(screen, (255,255,255), (size*x, size*y, size, size))
-
-            if body[y][x] == 3 and display_pecs==True:
-                pygame.draw.rect(screen, (229,57,53), (size*x, size*y, size, size))
-            elif body[y][x] == 3 and display_pecs==False:
-                pygame.draw.rect(screen, (255,255,255), (size*x, size*y, size, size))
-
-            if body[y][x] == 4 and display_biceps==True:
-                pygame.draw.rect(screen, (229,57,53), (size*x, size*y, size, size))
-            elif body[y][x] == 4 and display_biceps==False:
-                pygame.draw.rect(screen, (255,255,255), (size*x, size*y, size, size))
-
-            if body[y][x] == 6 and ext_obliques==True:
-                pygame.draw.rect(screen, (229,57,53), (size*x, size*y, size, size))
-            elif body[y][x] == 6 and ext_obliques==False:
-                pygame.draw.rect(screen, (255,255,255), (size*x, size*y, size, size))
-
-            if body[y][x] == 7 and muscle_dentele==True:
-                pygame.draw.rect(screen, (229,57,53), (size*x, size*y, size, size))
-            elif body[y][x] == 7 and muscle_dentele==False:
-                pygame.draw.rect(screen, (255,255,255), (size*x, size*y, size, size))
-
-            if body[y][x] == 8 and deltoïdes==True:
-                pygame.draw.rect(screen, (229,57,53), (size*x, size*y, size, size))
-            elif body[y][x] == 8 and deltoïdes==False:
-                pygame.draw.rect(screen, (255,255,255), (size*x, size*y, size, size))
-
-            if body[y][x] == 9 and trapèze==True:
-                pygame.draw.rect(screen, (229,57,53), (size*x, size*y, size, size))
-            elif body[y][x] == 9 and trapèze==False:
-                pygame.draw.rect(screen, (255,255,255), (size*x, size*y, size, size))
 
     draw_settings_icon(settings_icon, size)
     pygame.display.update()
@@ -599,7 +599,7 @@ def main():
         else:
             #screen = pygame.display.set_mode((width, height))
             pygame.display.set_caption('Muscles selection')
-            draw_body(body, size)
+            draw(body, size, body_colors, bool_dico)
 
         draw_settings_icon(settings_icon, size)
     pygame.display.flip()
@@ -614,9 +614,11 @@ while running:
         try:
             if event.type == pygame.MOUSEBUTTONDOWN:
                 Xpos, Ypos = pygame.mouse.get_pos()
+                """
                 if innit == True:
-                    innit = False
-                    draw_body(body,size)
+                    innit = False"""
+                draw(body, size, body_colors, bool_dico)
+
                 if round(Xpos/5) >= 76 and round(Xpos/5) <= 82 and round(Ypos/5) >= 2 and round(Ypos/5) <= 7:
                     if settings == False:
                         settings = True
@@ -638,7 +640,7 @@ while running:
                             if sound == True:
                                 select_sound.play()
                             display_abs = True
-                        draw_body(body, size)
+                        draw(body, size, body_colors, bool_dico)
                     elif body[round(Ypos/5)][round(Xpos/5)] == 3:
                         if display_pecs == True:
                             display_pecs = False
@@ -646,7 +648,7 @@ while running:
                             display_pecs = True
                             if sound == True:
                                 select_sound.play()
-                        draw_body(body, size)
+                        draw(body, size, body_colors, bool_dico)
                     elif body[round(Ypos/5)][round(Xpos/5)] == 4:
                         if display_biceps == True:
                             display_biceps = False
@@ -654,7 +656,7 @@ while running:
                             display_biceps = True
                             if sound == True:
                                 select_sound.play()
-                        draw_body(body, size)
+                        draw(body, size, body_colors, bool_dico)
 
                     elif body[round(Ypos/5)][round(Xpos/5)] == 6:
                         if ext_obliques == True:
@@ -663,7 +665,7 @@ while running:
                             ext_obliques = True
                             if sound == True:
                                 select_sound.play()
-                        draw_body(body, size)
+                        draw(body, size, body_colors, bool_dico)
 
                     elif body[round(Ypos/5)][round(Xpos/5)] == 7:
                         if muscle_dentele == True:
@@ -672,7 +674,7 @@ while running:
                             muscle_dentele = True
                             if sound == True:
                                 select_sound.play()
-                        draw_body(body, size)
+                        draw(body, size, body_colors, bool_dico)
 
                     elif body[round(Ypos/5)][round(Xpos/5)] == 8:
                         if deltoïdes == True:
@@ -681,7 +683,7 @@ while running:
                             deltoïdes = True
                             if sound == True:
                                 select_sound.play()
-                        draw_body(body, size)
+                        draw(body, size, body_colors, bool_dico)
 
                     elif body[round(Ypos/5)][round(Xpos/5)] == 9:
                         if trapèze == True:
@@ -690,7 +692,7 @@ while running:
                             trapèze = True
                             if sound == True:
                                 select_sound.play()
-                        draw_body(body, size)
+                        draw(body, size, body_colors, bool_dico)
 
                 elif settings == False and innit == False and Materiel_menu_display == True:
                     if materiel_menu[round(Ypos/5)][round(Xpos/5)] == 3:
