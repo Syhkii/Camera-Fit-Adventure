@@ -31,9 +31,9 @@ _________                _____.__
 
 
 """ EFFETS SONORES """
-sound = False # activer les sons
+sound = True # activer les sons
 try:
-    select_sound = pygame.mixer.Sound('lol.mp3')
+    #select_sound = pygame.mixer.Sound('lol.mp3')
     start_sound = pygame.mixer.Sound('load.wav')
 except Exception as e: # si il manque des fichiers on désactive le son
     print('Missing sound files', e)
@@ -417,8 +417,9 @@ while running:
                             bool_dico_msucle[str(body_colors[body[round(Ypos/size)][round(Xpos/size)]][1])] = "False"
                         else:
                             bool_dico_msucle[str(body_colors[body[round(Ypos/size)][round(Xpos/size)]][1])] = "True"
+                            """
                             if sound == True:
-                                select_sound.play()
+                                select_sound.play()"""
 
                             exos = get_exo()
                             if exos != []:
@@ -433,8 +434,9 @@ while running:
                                 bool_dico_matos[str(materiel_menu_colors[materiel_menu[round(Ypos/size)][round(Xpos/size)-85]][1])] = "False"
                             else:
                                 bool_dico_matos[str(materiel_menu_colors[materiel_menu[round(Ypos/size)][round(Xpos/size)-85]][1])] = "True"
+                                """
                                 if sound == True:
-                                    select_sound.play()
+                                    select_sound.play()"""
                             draw(materiel_menu, size, materiel_menu_colors, bool_dico_matos, 85)
 
             if event.type == pygame.QUIT:
