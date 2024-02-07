@@ -1,0 +1,79 @@
+Zone générale ;Nom;Zone travailler ;matériel;Variation;Conseille
+BRAS;Flexion des avants bras avec Haltères;Biceps/Brachial/Deltoïde;Haltères;Calé sur cuisse/ prise marteau;Matérielle achetable
+;Flexion des avants bras à la poulie basse;Biceps Brachial;Poulie basse;;A faire en salle
+;Flexion des Biceps en croix;Biceps Brachial;Poulie haute;;A faire en salle
+;Flexion des avant bras à la Barre;Biceps Brachial/Brachial;Barre;Prise sérée ou large;Matérielle achetable
+;Biceps à la machine spécialiser ;Biceps Brachial/Brachial;Larry scott;Possible sans machine au banc;A faire en salle
+;Extension des poignets à la barre ;muscle des avants bras;Barre;;Matérielle achetable
+;Flexion des pognets à la barre ;muscle des avants bras;Barre;;Matérielle achetable
+;Triceps à la poulie haute ;Triceps;Poulie haute;Main en pronation ou supination;A faire en salle
+;Extension des avants-bras couché sur un banc;Triceps ;Barre + banc;Haltères couché au sol;Matérielle achetable
+;Extension vertical des bras avec haltère;Triceps;Haltères;Haltère tenue à deux mains;Matérielle achetable
+;Répulsion entre deux bancs;Triceps;2 banc;;A faire en salle
+;;;;;
+EPAULES;Développé dérrière la nuque;Triceps/Deltoïde;Barre/Haltères;Devant ( travaille du Pectoraux)/ avec haltères;Matérielle achetable
+;Elévation latéral des bras;Trapèze/ Deltoïde;Haltères;variation des positions de départ/ buste penché en avant;Matérielle achetable
+;Elévation latéral des bras alternée ;Deltoïde;Haltères;sur banc/ à main jointe;Matérielle achetable
+;Elévation latéral couché sur le coté;Deltoïde;Haltères/banc;;Matérielle achetable
+;Elévation latéral en vant;triceps/Deltoïde;Poulie basse;Buste penché avant;Matérielle achetable
+;Elévation frontale ;Deltoïde;Haltères/barre;Barre ou Haltère;Matérielle achetable
+;Rowing vertical;Deltoïde/Trapèze/Abdos/Fessier;Barre;;Matérielle achetable
+;Elévation latéral à la machine;Deltoïde ;Machine;;A faire en salle
+;Arière des épaules à la machine;Trapèze/ Deltoïde;Machine;;A faire en salle
+;;;;;
+Pectoraux;;;;;
+;Les Dips;Pectoraux/ Triceps/ Deltoïde;aucun;;Pas de matérielle
+;Développé-couché;Pectoraux/ Triceps/ Deltoïde;Barre / banc / Teneur/ Haltères;Machine/ position des jambes, mains / incliné;A faire en salle/ Matérielle achetable (selon les versions)
+;Pompes;Pectoraux/ Triceps/ Deltoïde;aucun;position des mains;Pas de matérielle
+;Répulsion aux barres parallèles;Pectoraux/ Triceps/ Deltoïde;Barres parallèles;;A faire en salle
+;Ecarté à la machine;Pectoraux;Machine;;A faire en salle
+;Pull over ;Pectoraux / Grand dorsal;Haltères/ Barre sur banc;Haltère/ Barre sur banc;Matérielle achetable
+;;;;;
+Dos ;;;;;
+;Superman;Lombaires;aucun;;Pas de matériel 
+;Bridge;Lombaires;aucun;;Pas de matériel 
+;Gainage;Deltoïde/Trapèze/Abdos/Fessier;aucun;;Pas de matériel 
+;Traction ;Grand dorsal/ Biceps Brachial;Barre à traction;Positions des mains;Matérielle achetable
+;Tirage poitrine;Grand dorsal/ Biceps Brachial;Poulie haute;Devant ou dérrière la nuque;A faire en salle
+;Tirage Nuque;Grand dorsal/ Biceps Brachial;Poulie haute;Poignée/prise;A faire en salle
+;Tirage bras tendu;Grand dorsal/ Biceps/Pectoraux;Poulie haute;;A faire en salle
+;Tirage poulie basse(rameur);Grand dorsal/ Biceps/Pectoraux/Deltoïde/trapèze;Poulie basse;;A faire en salle
+;Tirage horizontal à la barre;Grand dorsal/ Biceps/Pectoraux/Deltoïde/trapèze;Barre   ;;Matérielle achetable
+;Soulevé de Terre;Trapèze/Grand dorsal/ Cuisse / Fessier;Barre;Jambe tendu/ style sumo;Matérielle achetable
+;Extension du buste au banc;Fessier/ Cuisse;Banc;;Matérielle achetable
+;Tirage vertical;Deltoide/Trapèze Brachial;Barre;;Matérielle achetable
+Jambes;;;;;
+;Extension mollets avec élastique;mollets;Elastique;;Matérielle achetable
+;Side squat;abducteurs;Aucun;;Pas de matériel 
+;Squat sumo;abducteurs;Aucun;;Pas de matériel 
+;Les burpees;Pectoraux/Abdos/Quadriceps/Deltoides/Fessiers/Triceps/Ischio;Aucun;;Pas de matériel 
+;La chaise;Quadriceps;Aucun;;Pas de matériel 
+;Fentes en avant;Fessier/Cuisse;Aucun;;Pas de matériel 
+;Corde à sauter;Fessier/Quadriceps/Abdos/Ischio jambiers;corde;;Matérielle achetable
+;Course;Fessier/Quadriceps/ischio jambiers;Aucun;;Pas de matériel 
+;Squat;Fessier/Quadriceps/Abdos;Barre;Barre devant/ jambe écartées;A faire en salle
+;Flexion des cuises avec haltère;Fessier/Quadriceps;Haltères;;Matérielle achetable
+;Presse ;Quadriceps;Presse;Hack squat ( presse incliné);A faire en salle
+;Leg extension / leg curl;Quadriceps/ ischio jambiers;Leg Curl;Couché (leg Curl)/ Debout/ Assis;A faire en salle
+;Abudcteurs à la machine;Abudcteurs;abductor ;;A faire en salle
+;Extension d'un pied avec haltère;Triceps Sural;Haltères;;Matérielle achetable
+;Mollets à la machine;Triceps Sural;Donkey calf;;A faire en salle
+Fessiers;;;;;
+;Elevations latérales jambes tendues;Grand Fessier;Aucun;;Pas de matériel 
+;Donkey kick;Grand Fessier;Aucun;;Pas de matériel 
+;Extension de la hanche au sol;Grand Fessier;Aucun;;Pas de matériel 
+;Relevé de bassin au sol;Grand Fessier/ Biceps fémoral;Aucun;;Pas de matériel 
+;Abduction de la hanche couché;moyen Fessier;Aucun;;Pas de matériel 
+Abdominaux;;;;;
+;Planche;Abdos;Aucun;;Pas de matériel 
+;Mountaine climber;Abdos;Aucun;;Pas de matériel 
+;Crunch ;Abdos/Quadriceps droit de la cuisse;Aucun;à la polie haute;Pas de matériel 
+;Relevé du buste au sol;Abdos/Quadriceps droit de la cuisse;Aucun;appui des jambes/ Sur banc ;Pas de matériel 
+;Rotation du buste avec bâton;Abdos/Quadriceps droit de la cuisse;Barre fixe ;;Matérielle achetable
+;;Abdos;Barre;"à la machine ""twist""";Matérielle achetable
+Echauffement;;;;;
+;Nom;Temps;;;
+;Course/corde;~5min;;;
+;Ecartement des bras;20 rep;;;
+;rotation des bras;20rep;;;
+;Rotation des hanches;10rep;;;
