@@ -1,0 +1,140 @@
+part_dico_msucle = {
+'Granddorsal' : "Dos",   
+'Abdos': "Haut",
+'Pectoraux': "Haut",
+'display_biceps' : "Bras",
+'ext_obliques' : "Haut",
+'Trapèze' : "Bras",
+'muscle_dentele' : "Haut",
+'Deltoïde' : "Dos",
+'Deltoide' : "Dos",
+'Brachial' : "Bras",
+'Biceps_Brachial' : "Bras",
+'muscle_des_avants_bras' : "Bras",
+'Triceps' : "Bras",
+'triceps' : "Bras",
+'Fessier' : "Jambe",
+'Lombaires' : "Dos",
+'Biceps' : "Haut",
+'Cuisse' : "Jambe",
+'Grand dorsal' : "Dos",
+'mollets' : "Jambe",
+'abducteurs' : "Jambe",
+'Quadriceps' : "Jambe",
+'Ischio jambiers' : "Jambe",
+'Triceps Sural' : "Jambe",
+'Biceps fémoral' : "Jambe",
+'Quadriceps_droit_de_la_cuisse' : "Jambe",
+'Biceps Brachial' : "Bras"
+}
+
+
+
+
+def niveau():
+    Bilan=[]
+
+    poid = int(input("quelle est votre poid"))
+    rep=0
+    poidjambe= 0
+    repjambe  = 0
+    poiddos = 0
+    repdos = 0
+    poidhaut = 0
+    rephaut = 0
+    poidbras = 0
+    repbras = 0
+
+
+    print("test jambe")
+    print("Faite le plus de squat à vide possible")
+    rep = int(input("combien de rep ?"))
+    if rep>=30:
+        poidjambe = poid+30
+        repjambe = 12
+    elif rep>=20:
+        poidjambe =  poid+20
+        repjambe = 10
+    elif rep>=12:
+        poidjambe = poid+10
+        repjambe = 10
+    else:
+        poidjambe = poid
+        repjambe = 8
+    print("test haut du corps")
+    print("Faite le plus d'abdos possible")
+    rep = int(input("combien de rep ?"))
+    if rep>= 30:
+        poidhaut = 60
+        rephaut = 12  
+    elif rep>= 20:
+        poidhaut =  50
+        rephaut = 10
+    elif rep>= 12:
+        poidhaut = 40
+        rephaut = 10
+    else:
+        poidhaut = 30
+        rephaut = 8
+
+    print("test dos")
+    print("faite le plus de traction possible")
+    rep = int(input("Combien de rep ?"))
+    if rep>= 30:
+        poiddos = 60
+        repdos = 12
+    elif rep>= 20:
+        poiddos =  50
+        repdos = 10
+    elif rep>= 12:
+        poiddos = 40
+        repdos = 10
+    else:
+        poiddos = 30
+        repdos = 8
+
+    print("test bras")
+    print("faite le plus de pompe possible")
+    rep = int(input("Combien de rep ?"))
+    if rep>= 30:
+        poidbras = 50
+        repbras = 12
+    elif rep>= 20:
+        poidbras =  40
+        repbras = 10
+    elif rep>= 12:
+        poidbras = 30
+        repbras = 10
+    else:
+        poidbras = 20
+        repbras = 8
+    Bilan.extend([poidjambe,repjambe,poidhaut,rephaut,poiddos,repdos,poidbras,repbras])
+    print(Bilan)    
+    return Bilan
+
+
+
+def SeanceDirige(seance):
+    niveau_ = niveau()
+    for i in range(len(seance)):
+        temp = list()
+        exo, muscle_travaille = seance[i][0], str(seance[i][1])
+        muscle_travaille = muscle_travaille.replace(" ","")
+        muscle_travaille = muscle_travaille.split("/")
+        muscle_travaille
+        muscle_travaille = muscle_travaille[0]
+        if muscle_travaille in part_dico_msucle:
+            print(muscle_travaille)
+            if part_dico_msucle[muscle_travaille] == "Jambe":
+                print(f"Pour l'exo {exo} faire : {niveau_[1]} rep avec {niveau_[0]} kg ")
+            elif part_dico_msucle[muscle_travaille] == "Haut":
+                print(f"Pour l'exo {exo} faire : {niveau_[3]} rep avec {niveau_[2]} kg ")
+            elif part_dico_msucle[muscle_travaille] == "Dos":
+                print(f"Pour l'exo {exo} faire : {niveau_[5]} rep avec {niveau_[4]} kg ")
+            elif part_dico_msucle[muscle_travaille] == "Bras":
+                print(f"Pour l'exo {exo} faire : {niveau_[7]} rep avec {niveau_[6]} kg ")
+        else:
+            print(muscle_travaille)
+            print(f"Muscle non reconnu pour l'exo {exo}")
+    
+    return temp
